@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<script src="script.js" defer></script>
+		<title>Document</title>
+		<style>
+			* {
+				margin: 0%;
+				padding: 0;
+			}
+			body {
+				font-family: cursive;
+				background: yellow;
+			}
+			.container {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				min-height: 100vh;
+			}
+			.multiplication-quiz-box {
+				background: #fff;
+				text-transform: capitalize;
+				/* flex: 1; */
+				/* max-width: 25rem; */
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				padding: 1.5rem 1rem;
+				gap: 1.5em;
+				border-radius: 0.2rem;
+				box-shadow: 0.1rem -0.1rem 0.2rem rgba(0, 0, 0, 0.3), -0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.3);
+			}
+			p {
+				align-self: flex-end;
+
+				color: darkgreen;
+			}
+			h1 {
+				font-size: 2rem;
+				font-weight: 800;
+			}
+			form {
+				display: flex;
+				flex-direction: column;
+				gap: 1.5rem;
+			}
+			form input {
+				padding: 0.8rem;
+				font-size: 1.5rem;
+				text-transform: capitalize;
+				border: solid 0.35rem darkgreen;
+				font-family: inherit;
+				text-align: center;
+				color: darkgreen;
+				cursor: pointer;
+			}
+			form .input-number::-webkit-input-placeholder {
+				font-size: 1.7rem;
+				color: hwb(0 71% 26% / 0.829);
+			}
+			form .input-number:focus {
+				outline-offset: 0.4rem;
+				outline-color: rgba(0, 0, 0, 0.7);
+				outline-width: 0.2rem;
+				outline-style: solid;
+				/* box-shadow: 1rem 1rem rem .3rem black; */
+				/* box-shadow: .4rem .2rem .2rem rgba(0, 0, 0, .8); */
+			}
+
+			form .button {
+				border: solid 0.3rem darkgreen;
+				background: darkgreen;
+				color: white;
+				cursor: pointer;
+			}
+			.control-button {
+				display: flex;
+				align-items: center;
+				width: 100%;
+				justify-content: space-between;
+			}
+			.control-button button {
+				display: block;
+				padding: 0.2rem.9rem;
+				text-transform: capitalize;
+				border: solid 0.3rem darkgreen;
+				background: darkgreen;
+				color: white;
+				cursor: pointer;
+				border-radius: 0.2rem;
+				font-family: inherit;
+				font-size: 1rem;
+			}
+			@media (max-width: 600px) {
+				.container {
+					max-width: 50rem;
+					width: 80%;
+					margin: 0 auto;
+				}
+				h1 {
+					font-size: 1.3rem;
+					font-weight: 600;
+				}
+				form {
+					display: flex;
+				}
+				form .input-number::-webkit-input-placeholder {
+					font-size: 1.2rem;
+					color: hwb(0 71% 26% / 0.829);
+				}
+				form .input-number:focus {
+					outline-offset: 0.2rem;
+					outline-color: rgba(0, 0, 0, 0.7);
+					outline-width: 0.2rem;
+					outline-style: solid;
+					/* box-shadow: 1rem 1rem rem .3rem black; */
+					/* box-shadow: .4rem .2rem .2rem rgba(0, 0, 0, .8); */
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="multiplication-quiz-box">
+				<div class="control-button">
+					<button class="restart-btn">restart</button>
+					<p>
+						score :
+						<span class="score">0</span>
+					</p>
+				</div>
+
+				<h1>
+					what is
+					<span class="number1">0</span>
+					multiply by
+					<span class="number2">0</span>
+					?
+				</h1>
+				<form class="form">
+					<input type="number" name="" id="" class="input-number" placeholder="enter your answer" />
+					<input type="submit" value="submit" class="button" />
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
