@@ -1,0 +1,138 @@
+			* {
+			              margin: 0%;
+			              padding: 0;
+			              box-sizing: border-box;
+			}
+
+			html {
+			              font-size: 62.5%;
+			}
+
+			body {
+			              font-family: cursive;
+			              background: yellow;
+			}
+
+			.container {
+			              display: flex;
+			              align-items: center;
+			              justify-content: center;
+			              min-height: 100vh;
+			}
+
+			.multiplication-quiz-box {
+			              background: #fff;
+			              text-transform: capitalize;
+			              max-width: 50rem;
+			              width: 100%;
+			              display: flex;
+			              flex-direction: column;
+			              align-items: center;
+			              padding: 2.5rem;
+			              gap: 2rem;
+			              border-radius: 0.2rem;
+			              box-shadow: 0.1rem -0.1rem 0.2rem rgba(0, 0, 0, 0.3), -0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.3);
+			}
+
+			p {
+			              align-self: flex-end;
+
+			              color: darkgreen;
+			}
+
+			h1 {
+			              font-size: 3rem;
+			              font-weight: 800;
+			}
+
+			form {
+			              display: flex;
+			              flex-direction: column;
+			              gap: 3rem;
+
+			}
+
+			form input {
+			              padding: 1.2rem;
+			              font-size: 3rem;
+			              text-transform: capitalize;
+			              border: solid 0.35rem darkgreen;
+			              font-family: inherit;
+			              text-align: center;
+			              color: darkgreen;
+			              cursor: pointer;
+			}
+
+			form .input-number::-webkit-input-placeholder {
+			              font-size: 2rem;
+			              color: hwb(0 71% 26% / 0.829);
+			}
+
+			form .input-number:focus {
+			              outline-offset: 0.4rem;
+			              outline-color: rgba(0, 0, 0, 0.7);
+			              outline-width: 0.2rem;
+			              outline-style: solid;
+			              /* box-shadow: 1rem 1rem rem .3rem black; */
+			              /* box-shadow: .4rem .2rem .2rem rgba(0, 0, 0, .8); */
+			}
+
+			form .button {
+			              border: solid 0.3rem darkgreen;
+			              background: darkgreen;
+			              color: white;
+			              cursor: pointer;
+			              transition: all .3s ease-in;
+			}
+
+			form .button:hover {
+			              background-color: yellow;
+			              color: #000;
+			              border: solid 0.35rem yellow;
+			}
+
+			.control-button {
+			              display: flex;
+			              align-items: center;
+			              width: 100%;
+			              justify-content: space-between;
+			              font-size: 2rem;
+			}
+
+			.control-button button {
+			              display: block;
+			              padding: 0.2rem.9rem;
+			              text-transform: capitalize;
+			              border: solid 0.3rem darkgreen;
+			              background: darkgreen;
+			              color: white;
+			              cursor: pointer;
+			              border-radius: 0.2rem;
+			              font-family: inherit;
+			              font-size: 2rem;
+			}
+
+
+			@media (max-width: 37.5rem) {
+			              .multiplication-quiz-box {
+			                            max-width: 33rem;
+			                            width: 100%;
+			                            margin: 0 auto;
+
+
+			              }
+
+			              h1 {
+			                            font-size: 1.5rem;
+			                            font-weight: 600;
+			              }
+
+			              form {
+
+			                            width: 100%;
+			              }
+
+			              form input {
+                                                                      font-size: 1.6rem;
+                                                        }
+			}
